@@ -8,6 +8,8 @@ void main() {
   final employee = Employee('samson ', 46, 1.56, taxCode: 'Abi7', salary: 5000);
   print(employee.taxCode);
   print(employee.myName('lakaka'));
+  print(employee.toString());
+  print(person.toString());
 }
 
 class Person {
@@ -16,6 +18,7 @@ class Person {
   final int age;
   final double height;
   // function is called method  inside a class
+  String toString() => "name: $name, age: $age, height: $height"; // override
   String Descibe2(String name, int age, [double height = 0]) =>
       "my name is $name, i am $age years old, iam $height meters tall";
   String myName(String name) => 'my age is $name';
@@ -28,4 +31,7 @@ class Employee extends Person {
       : super(name: name, age: age, height: height);
   final String taxCode;
   final int salary;
+  
 }
+
+

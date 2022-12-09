@@ -7,7 +7,7 @@ void main() {
 
 //   // // always dynamic data type when u are not sure variabel to apply
  final person1 = describe(name, age, height);
- final person2 = describe("adewale", 64, 4.5);
+ final person2 = describe2("adewale", 64, 4.5);
  final person3 = sayName(name);
  print(person3);
 sayAge(age);
